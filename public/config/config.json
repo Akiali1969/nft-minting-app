@@ -1,15 +1,15 @@
 {
-  "CONTRACT_ADDRESS": "0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
-  "SCAN_LINK": "https://polygonscan.com/token/0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
+  "CONTRACT_ADDRESS": "0x4bc743489f0B15A3ec58d92F346D79B2062404F6",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x4bc743489f0b15a3ec58d92f346d79b2062404f6",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "Matic",
-    "ID": 137
+    "NAME": "Rinkeby",
+    "SYMBOL": "Eth",
+    "ID": 4
   },
-  "NFT_NAME": "The Stripes NFT",
-  "SYMBOL": "TSNFT",
-  "MAX_SUPPLY": 992,
-  "WEI_COST": 4000000000000000000,
+  "NFT_NAME": "Wukong 2D",
+  "SYMBOL": "WKG2D",
+  "MAX_SUPPLY": 3332,
+  "WEI_COST": 40000000000000000000000,
   "DISPLAY_COST": 4,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
