@@ -37,7 +37,7 @@ export const fetchData = () => {
       dispatch(
         fetchDataSuccess({
           totalSupply,
-          // cost,
+           cost,
         })
       );
     } catch (err) {
