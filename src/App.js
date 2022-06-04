@@ -166,6 +166,10 @@ function App() {
     setMintAmount(newMintAmount);
   };
 
+  const displayCost = () =>{
+    let cost = data.cost/1000000000000000000;
+  };
+
   const getData = () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
       dispatch(fetchData(blockchain.account));
@@ -289,7 +293,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.NFT_NAME} costs {data.cost}{" "}
+                  1 {CONFIG.NFT_NAME} costs {displayCost}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
