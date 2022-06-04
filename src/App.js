@@ -129,10 +129,11 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
-    const transcation = await
     blockchain.smartContract.methods
-      .mint(mintAmount)
+      .mint(blockchain.account,mintAmount)
       .send({
+        gasLimit: String(totalGasLimit),
+        to: CONFIG.CONTRACT_ADDRESS,
         from: blockchain.account,
         value: totalCostWei,
       })
@@ -149,13 +150,6 @@ function App() {
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
       });
-
-      if(transcation){
-        alert("Yey");
-      }
-      else{
-        alert("No");
-      }
   };
 
   const decrementMintAmount = () => {
@@ -433,7 +427,7 @@ function App() {
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            gas limit. Usewer {blockchain.account}
           </s.TextDescription>
         </s.Container>
       </s.Container>
