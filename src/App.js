@@ -149,6 +149,13 @@ function App() {
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
       });
+
+      if(transcation){
+        alert("Yey");
+      }
+      else{
+        alert("No");
+      }
   };
 
   const decrementMintAmount = () => {
