@@ -119,6 +119,8 @@ function App() {
   });
 
   const claimNFTs = () => {
+    const lel = blockchain.smartContract.cost().call();
+    alert("Cost is " +lel);
     let cost = 5;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
