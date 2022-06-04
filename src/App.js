@@ -129,6 +129,7 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
+    const transcation = await
     blockchain.smartContract.methods
       .mint(mintAmount)
       .send({
