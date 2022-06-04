@@ -293,7 +293,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.NFT_NAME} costs {displayCost}{" "}
+                  1 {CONFIG.NFT_NAME} costs {data.cost/1000000000000000}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
