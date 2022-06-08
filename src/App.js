@@ -204,7 +204,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
-        <StyledButton
+        <StyledButton style="float:left"
                       onClick={(e) => {
                         useEffect();
                       }}
