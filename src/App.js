@@ -197,12 +197,20 @@ function App() {
 
   return (
     <s.Screen>
+      
       <s.Container
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
+        <StyledButton
+                      onClick={(e) => {
+                        href='wukongfinance.com'
+                      }}
+                    >
+                      CONNECT
+                    </StyledButton>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
