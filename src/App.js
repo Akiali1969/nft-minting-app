@@ -118,8 +118,8 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
-  const homePage = () =>{
-    res.redirect('wukongfinance.com');
+  homePage = () =>{
+    Location: `wukongfinance.com`;
   }; 
 
   const claimNFTs = () => {
@@ -245,7 +245,10 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
-            <StyledButton href={CONFIG.SCAN_LINK}
+            <StyledButton
+            onClick={(e) => {
+              homePage();
+            }}
                     >
                       BACK
                     </StyledButton>
