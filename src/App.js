@@ -197,6 +197,10 @@ function App() {
 
   return (
     <s.Screen>
+      <StyledButton href={CONFIG.SCAN_LINK}
+                    >
+                      BACK
+                    </StyledButton>
       <s.Container
         flex={1}
         ai={"center"}
@@ -243,7 +247,7 @@ function App() {
             </s.TextDescription>
             <StyledButton href={CONFIG.SCAN_LINK}
                     >
-                      CONNECT
+                      BACK
                     </StyledButton>
             <span
               style={{
