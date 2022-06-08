@@ -241,6 +241,10 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
+            <StyledButton href={CONFIG.SCAN_LINK}
+                    >
+                      CONNECT
+                    </StyledButton>
             <span
               style={{
                 textAlign: "center",
