@@ -245,13 +245,7 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
-            <StyledButton
-            onClick={(e) => {
-              homePage();
-            }}
-                    >
-                      BACK
-                    </StyledButton>
+
             <span
               style={{
                 textAlign: "center",
