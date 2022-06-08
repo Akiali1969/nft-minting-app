@@ -205,11 +205,6 @@ function App() {
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
         <a href="wukongfinance.com"><StyledButton
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
                     >
                       CONNECT
                     </StyledButton></a>
