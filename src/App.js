@@ -204,9 +204,10 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
-        <button onclick="window.location.href='www.google.com';">
+        <a href="www.google.com"><button onclick="window.location.href='www.google.com';">
       Click Here
-    </button>
+    </button></a>
+
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
