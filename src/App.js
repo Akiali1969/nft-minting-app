@@ -118,6 +118,10 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
+  const homePage = () =>{
+    res.redirect('wukongfinance.com');
+  }; 
+
   const claimNFTs = () => {
     let cost = data.cost;
     let gasLimit = CONFIG.GAS_LIMIT;
@@ -197,10 +201,6 @@ function App() {
 
   return (
     <s.Screen>
-      <StyledButton href={CONFIG.SCAN_LINK}
-                    >
-                      BACK
-                    </StyledButton>
       <s.Container
         flex={1}
         ai={"center"}
