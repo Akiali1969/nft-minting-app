@@ -204,7 +204,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
-        <a href="wukongfinance.com"><StyledButton
+        <a href="https://wukongfinance.com/"><StyledButton
                     >
                       CONNECT
                     </StyledButton></a>
