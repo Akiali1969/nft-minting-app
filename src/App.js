@@ -205,9 +205,7 @@ function App() {
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
         <StyledButton
-                      onClick={(e) => {
-                        "window.location.href='https://www.hyperlinkcode.com/button-links.php'"
-                      }}
+                      onClick="window.location.href='https://www.hyperlinkcode.com/button-links.php'"
                     >
                       CONNECT
                     </StyledButton>
