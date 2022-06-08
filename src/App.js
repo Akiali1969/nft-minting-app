@@ -204,10 +204,6 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
-        <a href="https://wukongfinance.com/"><StyledButton
-                    >
-                      CONNECT
-                    </StyledButton></a>
 
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
@@ -247,6 +243,11 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
+
+            <a href="https://wukongfinance.com/"><StyledButton
+                    >
+                      BACK
+                    </StyledButton></a>
 
             <span
               style={{
