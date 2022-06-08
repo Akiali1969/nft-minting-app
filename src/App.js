@@ -204,7 +204,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
       >
-        <button onclick="window.location.href='https://w3docs.com';">
+        <button onclick="window.location.href='www.google.com';">
       Click Here
     </button>
         <s.SpacerSmall />
