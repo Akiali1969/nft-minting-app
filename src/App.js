@@ -118,10 +118,6 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
-  homePage = () =>{
-    Location: `wukongfinance.com`;
-  }; 
-
   const claimNFTs = () => {
     let cost = data.cost;
     let gasLimit = CONFIG.GAS_LIMIT;
