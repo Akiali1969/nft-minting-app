@@ -206,7 +206,7 @@ function App() {
       >
         <StyledButton
                       onClick={(e) => {
-                        href='wukongfinance.com'
+                        "window.location.href='https://www.hyperlinkcode.com/button-links.php'"
                       }}
                     >
                       CONNECT
